@@ -1,0 +1,267 @@
+/* ==========================================
+   OPERATION: TE AMO ❤️
+   Para Giovani Tapia
+   Con amor, Saya
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    font-family:Georgia, serif;
+    color:white;
+}
+
+/* ============================
+   INTRO
+============================ */
+
+#intro{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#000;
+    z-index:100;
+    transition:opacity 1.5s;
+}
+
+#intro::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    background:#b00000;
+
+    border-radius:50%;
+
+    filter:blur(220px);
+
+    opacity:.15;
+
+    animation:respirar 5s ease-in-out infinite;
+
+}
+
+#texto{
+
+    position:relative;
+
+    font-size:52px;
+
+    width:80%;
+
+    text-align:center;
+
+    z-index:2;
+
+    min-height:120px;
+
+}
+
+#linea{
+
+    width:0;
+
+    height:2px;
+
+    background:#b00000;
+
+    margin-top:35px;
+
+    transition:2s;
+
+    z-index:2;
+
+}
+
+@keyframes respirar{
+
+    50%{
+
+        transform:scale(1.2);
+
+        opacity:.28;
+
+    }
+
+}
+
+/* ============================
+   DEDICATORIA
+============================ */
+
+#dedicatoria{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    background:#000;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:1.5s;
+
+    z-index:90;
+
+    padding:25px;
+
+}
+
+#dedicatoria h2{
+
+    color:#d10000;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+#dedicatoria h1{
+
+    font-size:62px;
+
+    margin-bottom:25px;
+
+}
+
+#dedicatoria p{
+
+    max-width:700px;
+
+    font-size:24px;
+
+    color:#dddddd;
+
+    line-height:40px;
+
+}
+
+/* ============================
+   LOGO
+============================ */
+
+#logoContainer{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#000;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:1.5s;
+
+    z-index:80;
+
+}
+
+#logoCanvas{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+}
+
+/* ============================
+   CARTA
+============================ */
+
+#carta{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#000;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:2s;
+
+    z-index:110;
+
+    padding:40px;
+
+}
+
+.contenidoCarta{
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.contenidoCarta h2{
+
+    color:#d10000;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+
+}
+
+#mensajeCarta{
+
+    font-size:26px;
+
+    color:#eeeeee;
+
+    line-height:46px;
+
+}
+
+/* ============================
+   CLASES
+============================ */
+
+.mostrar{
+
+    opacity:1 !important;
+
+    visibility:visible !important;
+
+}
